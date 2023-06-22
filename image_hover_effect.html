@@ -1,0 +1,56 @@
+<html>
+<head>
+    <style type="text/css">
+        .container-img {
+                position: relative;
+                width: 300px;
+            }
+            .image{
+                display:block;
+                width:300px;
+                height: 400px;
+                transition:1s;
+            }
+            .Overlay {
+                position:absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 100%;
+                opacity: 0;
+                transition: 1s;
+                background-color: chartreuse;
+            }
+            .container-img:hover .Overlay{
+                opacity:1;
+            }
+            .container-img:hover .image{
+                transform:rotate(360deg);
+            }
+            .text{
+                color:beige;
+                font-size: 20px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                text-align: center;
+            }
+        </style>
+    <title>Image hower</title>
+</head>
+<body>
+    <h2>image Overlay effect</h2>
+    <div class="container-img">
+        <img src="C:\Users\SID\Desktop\sid\day 4\OIP.jpg" alt="demo image" class="Image">
+        <div class="Overlay">
+            <div class="text">hello</div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
