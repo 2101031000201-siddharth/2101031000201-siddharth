@@ -1,0 +1,63 @@
+body{
+    font-family: Arial;
+    font-size: 16px;
+    margin: 0;
+    background: #567d8f;
+    color: #0a0a0a;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 100vh;
+}
+.container{
+    width: 600px;
+    background-color: rgb(124, 162, 175);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(6, 222, 251, 0.975);
+    border: 20px solid #421783;
+}
+.container.row{
+    margin-bottom: 12px;
+}
+.container input:not([type="Submit"]){
+    width: 90%;
+    margin: 0 0 3px;
+    background-color: #300808;
+    color:#0c0b0b;
+    padding: 20px 25px;
+    border: 2px solid #0e0e0e;
+    font-size: 18px;
+  
+}
+.container textarea{
+    border: 2px solid #0e0e0e;
+    height: 120px;
+    width: 450px;
+    resize: none;
+    font-size: 18px;
+
+}
+.container input[type="Submit"]{
+    padding: 10px 30px;
+    font-size: 18px;
+    line-height: 25px;
+    height: 50px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #7cfde3;
+    
+    border: 2px solid #0e0e0e;
+    transition: all 0.5s ease-out;
+    border-radius: 5px;
+
+    
+}
+.container input[type="radio"]{
+    height: 20px;
+    width: 20px;
+}
+.container input[type="Submit"]:hover{
+    background: linear-gradient(#f308c4, #05819c);
+
+}
